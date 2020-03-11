@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+当前目录：<span th:text="${inputPath}"></span>
+<table>
+    <tr th:each="fileName : ${fileNames}">
+        <td th:text="${fileName}"></td>
+        <td><a href="#" th:href="@{/download/{downFileName}(downFileName=${fileName})}">下载</a></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>跳转中</title>
+<script type="text/javascript">
+	function myFunction(){
+		//获取主机地址+项目名，如： http://localhost:8088/api
+		var curPath = window.document.location.href;
+		window.location.href=curPath+"/";
+	}
+	
+</script>
+</head>
+<body onload="myFunction()">
+
+</body>
+</html>
